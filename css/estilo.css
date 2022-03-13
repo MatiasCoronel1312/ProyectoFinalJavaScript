@@ -1,0 +1,40 @@
+* {
+    background-color: rgb(235, 3, 3);
+    color: rgb(12, 12, 12);
+    line-height: 4rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+article {
+    text-align: center;
+    font-size: 2rem;
+
+}
+div input {
+    background-color: aliceblue;
+    height: 2.5rem;
+    width: 21rem;
+    font-size: 2rem;
+
+}
+
+div select {
+    height: 2.5rem;
+    width: 10rem;
+    font-size: 2rem;
+}
+
+footer div input {
+    background-color: rgb(253, 253, 253);
+    height: 3rem;
+    width: 12rem;
+    font-size: 2rem;
+    padding-bottom: 3rem;
+}
+

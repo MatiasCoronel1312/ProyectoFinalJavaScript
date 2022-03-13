@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/variables.js"></script>
+    <script src="js/simuladorPrestamo.js"></script>
+    <script src="js/array.js"></script>
+
+    <title>Solicitud de Prestamo</title>
+</head>
+
+<body>
+    <h1>Calcula tu prestamo Personal</h1>
+
+    <article>
+        <div>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+            </div>
+            <div>
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Ingresa tu correo" required>
+            </div>
+            <div>
+                <label for="sueldo">
+                    <p>Ingrese su sueldo neto mensual:</p>
+                </label>
+                <input class="sueldo" type="number" name="sueldo" placeholder="$ en mano">
+            </div>
+            <div>
+                <label for="select">A pagar en:</label>
+                <select id="select" name="select">
+
+                    <option value="3">3-meses</option>
+                    <option value="6">6-meses</option>
+                    <option value="9">9-meses</option>
+                    <option value="12">12-meses</option>
+
+                </select>
+
+                <footer>
+                    
+                    <div>
+                        <input type="submit" value="SIMULAR">
+                        <input type="reset" value="Reset">
+                    </div>
+                </footer>
+    </article>
+</body>
+
+</html>
