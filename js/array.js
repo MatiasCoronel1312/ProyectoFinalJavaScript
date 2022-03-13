@@ -40,6 +40,8 @@ for (let cliente=0;cliente<prestamos.length;cliente++){
     console.log(prestamos[cliente]); //paso por consola la lista entera de clientes
     
 }
-   
+const clientes = prestamos.map((el) => el.nombre)
+console.log(clientes)
+   //y una lista por nombre de clientes
 
     
