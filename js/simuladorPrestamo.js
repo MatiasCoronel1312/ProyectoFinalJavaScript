@@ -26,19 +26,19 @@ class SimuladorPrestamo {
 
 
 
- nombre = prompt("Ingrese su Nombre");
+ //nombre = prompt("Ingrese su Nombre");
 
- apellido = prompt("Ingrese su Apellido")
+// apellido = prompt("Ingrese su Apellido")
 
- sueldo = parseFloat(prompt("Ingrese su sueldo neto mensual:"));
+// sueldo = parseFloat(prompt("Ingrese su sueldo neto mensual:"));
 
- cuotas = parseInt(prompt("A pagar en: cuotas\n 3 \n 6 \n 9 \n 12"))
+//cuotas = parseInt(prompt("A pagar en: cuotas\n 3 \n 6 \n 9 \n 12"))
 
-const prestamo1 = new SimuladorPrestamo (sueldo, sueldoDebitar, cuotas);
+// const prestamo1 = new SimuladorPrestamo (sueldo, sueldoDebitar, cuotas);
 
-prestamo1.cotizarPrestamo ();
+// prestamo1.cotizarPrestamo ();
 
-prestamoNeto=prestamo1.cotizarPrestamo();
+// prestamoNeto=prestamo1.cotizarPrestamo();
 
 
 
