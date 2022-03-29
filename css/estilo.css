@@ -84,21 +84,28 @@ div input {
     border-color: #474343;
     border-width: 2px ;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .tabla_fila1{
     border-style: solid;
-    border-color: #474343;
+    border-color: #ad2424;
     border-width: 2px ;
     display: flex;
     justify-content: center;
-    padding: 1rem;
+    padding: 0rem;
 }
 th {
     padding: 2rem;
+    border-style: solid;
+    border-color: #b90101;
+    border-width: 2px ;
 }
 td {
-    padding: 3rem;
+    width: 9rem;
+    padding: 1rem;
+    border-style: solid;
+    border-color: #474343;
+    border-width: 2px ;
 }
 .tabla_fila2{
     border-style: solid;
@@ -106,7 +113,7 @@ td {
     border-width: 2px ;
     display: flex;
     justify-content: center;
-    padding: 1rem;
+    padding: 0rem;
 }
 
 .IngresoSueldo{
