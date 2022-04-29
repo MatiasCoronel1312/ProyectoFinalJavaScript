@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link rel="stylesheet" href="./../../css/estilo.css">
     <script defer src="./../../js/variables.js"></script>
     <script defer src="./../../js/detalle.js"></script>
+    <script defer src="./../../js/fetch.js"></script>
     <link rel="shortcut icon" href="./../img/favicon.png">
     <title>Detalles del Prestamo</title>
 </head>
+
 <body>
     <header>
-        <a class="header__logo" href="./../../index.html"><img id="logo" src="./../img/logo.png"></a>
+        <div class="header__logo">
+            <a href="./../../index.html"><img id="logo" class="responsive-img" src="./../img/logo.png"></a>
+        </div>
         <h1>¿Querés calcular tu préstamo personal y saber cuál sería tu cuota?</h1>
-        
+
     </header>
     <main class="main__detalles">
         <div>
-           <h3 class="main__titulo">Detalle del prestamo *</h3>
-        </div >
-        <div id="aviso">
-            
+            <h3 class="main__titulo">Detalle del prestamo *</h3>
         </div>
-        <div class="tabla" >
-            <table class="tabla__titulo">
-                <thead class="tabla_fila1">
+        <div id="aviso">
+
+        </div>
+        <div class="tabla">
+            <table class="centered">
+                <thead>
                     <tr>
                         <th>Prestamo</th>
                         <th class="align-right">Cuotas</th>
                         <th class="align-right">Importe Cuotas</th>
                     </tr>
                 </thead>
-                <tbody class="tabla_fila2" id="listado">
+                <tbody id="listado">
                     <tr>
                         <td class="align-left">No hay datos cargados cargados...</th>
                         <td class="align-right">0</th>
@@ -44,8 +51,19 @@
 
     </main>
     <footer>
-        <p>*Simulación informativa. La solicitud del prestamo por home banking o sucursal estará sujeta a aprobación crediticia.</p>
+        <div class="footer__botones">
+            <div>
+                <button class="boton" id="botonMeInteresa">Me Interesa</button>
+            </div>
+            <div class="right-align">
+                <button class="boton "><a class="black-text" href="./../../index.html">Volver</a></ button>
+            </div>
+        </div>
+        <p id="peticionEnviada"></p>
+        <p>*Simulación informativa. La solicitud del prestamo por home banking o sucursal estará sujeta a aprobación
+            crediticia.</p>
     </footer>
-    
+
 </body>
+
 </html>

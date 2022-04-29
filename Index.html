@@ -5,18 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilo.css">
-    <script defer src="js/variables.js"></script>
-    <script defer src="js/simuladorPrestamo.js"></script>
-    <script defer src="js/array.js"></script>
-    <script defer src="./../../js/json.js"></script>
+    <script defer src="./js/variables.js"></script>
+    <script defer src="./js/simuladorPrestamo.js"></script>
+    <script defer src="./js/array.js"></script>
+    <script defer src="./js/json.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./css/estilo.css">
     <link rel="shortcut icon" href="./assets/img/favicon.png">
     <title>Simulador de Prestamo</title>
 </head>
 
 <body>
     <header>
-        <a class="header__logo" href="index.html"><img id="logo" src="./assets/img/logo.png" alt="logo"></a>
+        <div class="header__logo">
+            <a href="index.html"><img id="logo" class="responsive-img" src="./assets/img/logo.png" alt="logo"></a>
+        </div>
         <h1>¿Querés calcular tu préstamo personal y saber cuál sería tu cuota?</h1>
 
     </header>
@@ -26,30 +29,31 @@
         <article>
             <div class="main__div">
                 <h2>Simulalo ahora</h2>
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
-                </div>
-                <div>
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
-                </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="Correo electronico" required>
-                </div>
-                <div id="saludo">
-                    <button id="botonMain">INGRESAR</button>
+                <form id="formulario">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Correo electronico" required>
+                    </div>
+                    <div id="saludo">
+                        <button id="botonMain">INGRESAR</button>
 
-                </div>
+                    </div>
 
-                <div>
-                    <label for="sueldo">
-                        <p class="IngresoSueldo">Ingrese su sueldo neto mensual:</p>
-                    </label>
-                    <input id="sueldo" class="sueldo" type="number" name="sueldo" placeholder="$ en mano">
-                </div>
-                <div>
+                    <div>
+                        <label for="sueldo">
+                            <p class="IngresoSueldo">Ingrese su sueldo neto mensual:</p>
+                        </label>
+                        <input id="sueldo" class="sueldo" type="number" name="sueldo" placeholder="$ en mano">
+                    </div>
+
                     <label for="select">A pagar en:</label>
                     <select id="select" name="select">
                         <option value="0">Cuotas</option>
@@ -59,6 +63,8 @@
                         <option value="12">12-meses</option>
 
                     </select>
+                </form>
+            </div>
         </article>
     </main>
 
@@ -75,7 +81,7 @@
 
             </div>
             <div id="buttonDetalle">
-                
+
             </div>
         </div>
     </footer>
